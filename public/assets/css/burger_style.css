@@ -1,15 +1,39 @@
 body {
-    background-color: lightpink;
+    background-image: url("/assets/img/background.jpg");
     width: 100%;
 }
 
-div.image {
-    content:url("../img/burger.png");
- }​
-
 h1 {
-    margin: auto 0;
-    margin-left: 50%;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.my-icon {
+    width: 77px;
+    height: 77px;
+    padding-right: 20px;
+}
+
+.card-body {
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+
+.jumbotron {
+	height: 100%;
+	margin-left: 20px;
+}
+
+.card {
+	width: 365px;
+}
+
+#burger_container {
+    margin-right: 50px;
+}
+
+.add_burger {
+    align-content: center;
 }
 
 #available {
@@ -20,7 +44,6 @@ h1 {
 
 #devoured {
     float: left;
-
 }
 
 li {
