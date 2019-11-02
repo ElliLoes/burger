@@ -4,8 +4,10 @@ var router = express.Router();
 
 var burger = require("../models/burger.js");
 
+// -- UI ----------------------------------------------------------------------
+
 router.get("/", function (req, res) {
-    burger.selectAll(function (data) {
+    burger.all(function (data) {
         var hbsObject = {
             burgers: data
         };
@@ -13,6 +15,8 @@ router.get("/", function (req, res) {
         res.render("index", hbsObject);
     });
 });
+
+// -- API ---------------------------------------------------------------------
 
 router.post("/api/burgers", function (req, res) {
     burger.create([
